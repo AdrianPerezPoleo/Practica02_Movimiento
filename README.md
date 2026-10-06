@@ -131,3 +131,20 @@ Para resolver el problema, añadimos a la multiplicación de dentro del `Transla
 ### Ejecución
 
 ![](GIFs/Ejercicio10.gif)
+
+
+## Ejercicio 11. Movimiento Dirigido
+
+El fichero con el código se encuentra en [Assets/Scripts/Ejercicio11_MoveToSphere.cs](Assets/Scripts/Ejercicio11_MoveToSphere.cs)
+
+### Descripción
+En este ejercicio se propone que el cubo se mueva hacia la posición en la que se encuentre la esfera. Además, la velocidad debe ser constante y no cambiar en base a la distancia entre los objetos.
+
+### Implementación
+- Para obtener el vector de dirección se restaron las distancias entre las posiciones (`transform.position`) de los objetos.
+- Para ubicar a la esfera fue necesario utilizar un tag, pues si bien podría haber crear un atribuot público `GameComponent`, preferí utilizar el tag como hicimos en la práctica pasada.
+- Finalmente se normaliza el vector de distancia y se multiplica por la velocidad y el delta del tiempo.
+
+### Ejecución
+
+![](GIFs/Ejercicio11.gif)
