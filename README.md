@@ -148,3 +148,17 @@ En este ejercicio se propone que el cubo se mueva hacia la posición en la que s
 ### Ejecución
 
 ![](GIFs/Ejercicio11.gif)
+
+## Ejercicio 12. LookAt
+
+El fichero con el código se encuentra en [Assets/Scripts/Ejercicio11_MoveToSphere.cs](Assets/Scripts/Ejercicio11_MoveToSphere.cs)
+
+### Descripción
+Este ejercicio es una modificación del ejercicio anterior y se pide que el cubo, a la vez que persigue a la esfera, siempre le mire.
+
+### Implementación
+Gracias a la ayuda del enunciado, la implementación fue bastante simple pues solo fue necesario añadir `transform.LookAt()` y el transform de la esfera.
+
+### Ejecución
+
+![](GIFS/Ejercicio12.gif)
