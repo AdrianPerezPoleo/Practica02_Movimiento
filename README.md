@@ -115,3 +115,19 @@ Los movimientos se deben hacer en los ejes X y Z y una vez más contamos con el 
 ### Ejecución
 ![](GIFs/Ejercicio09.gif)
 
+## Ejercicio 10. Movimiento proporcional al tiempo transcurrido
+
+Este ejercicio también tiene dos ficheros de código (muy similares) que se encuentran en:
+- [Assets/Scripts/Ejercicio10_MovimientoEnTiempoCubo.cs](Assets/Scripts/Ejercicio10_MovimientoEnTiempoCubo.cs)
+- [Assets/Scripts/Ejercicio10_MovimientoEnTiempoEsfera.cs](Assets/Scripts/Ejercicio10_MovimientoEnTiempoEsfera.cs)
+
+### Descripción 
+Este ejercicio es muy similar al anterior pero se pretende resolver el problema de que en algunos dispositivos, o incluso en el mismo dispositivo pero en diferentes momentos, la carga y generación de los frames puede tardar diferentes periodos de tiempo.
+
+### Implementación
+
+Para resolver el problema, añadimos a la multiplicación de dentro del `Translate` el factor `Time.deltaTime`, como ya hicimos en algún apartado anterior para mejorar la visualización de los ejemplos.
+
+### Ejecución
+
+![](GIFs/Ejercicio10.gif)
