@@ -89,7 +89,29 @@ En este caso el cubo flota, pues no hemos añadido físicas al mismo. El movimie
 
 #### e. Intercambiar el movimiento relativo al sistema de referencia local y el mundial
 - El sistema de referencia local tiene en cuenta si el cubo está rotando en el eje en el que se va a mover.
+
 ![](GIFs/Ejercicio08eaa.gif)
 
 - Sin embargo, el sistema de referencia global tiene solo en cuenta los ejes del mundo y por tanto no tiene en cuenta si los ejes del objeto han sido desplazados o rotados.
+
 ![](GIFs/Ejercicio08ebb.gif)
+
+## Ejercicio 09. Movimiento con Teclas
+
+Este ejercicio tiene dos ficheros de código (muy similares) que se encuentran en:
+- [Assets/Scripts/Ejercicio09_MovimientoConTeclasCubo.cs](Assets/Scripts/Ejercicio09_MovimientoConTeclasCubo.cs)
+- [Assets/Scripts/Ejercicio09_MovimientoConTeclasEsfera.cs](Assets/Scripts/Ejercicio09_MovimientoConTeclasEsfera.cs)
+
+### Descripción
+
+Este es el primer ejercicio en el que se asocian las teclas con el movimiento de los objetos. El cubo se debe poder mover con las flechas mientras que la esfera debe poder hacerlo con las teclas A, S W y D.
+
+Los movimientos se deben hacer en los ejes X y Z y una vez más contamos con el atributo `velocidad`.
+
+### Implementación
+- La implementación se realizó utilizando el material de ejercicios anteriores (usando un Translate con la multiplicación de la velocidad por el eje y por el vector unitario del mismo).
+- Los vectores unitarios de los ejes utilizados fueron `Vector3.right` y `Vector3.forward`.
+
+### Ejecución
+![](GIFs/Ejercicio09.gif)
+
