@@ -6,7 +6,7 @@
 * [Ejercicio 06. Velocidad](#ejercicio-06-velocidad)
 * [Ejercicio 07. Mapea de teclas a acciones](#ejercicio-07-mapeo-de-teclas-a-accinoes)
 * [Ejercicio 08. Análisis de Movimiento](#ejercicio-08-análisis-de-movimiento)
-* [Ejercicio 09. ](#ejercicio-09-movimiento-con-teclas)
+* [Ejercicio 09. Movimiento con teclas](#ejercicio-09-movimiento-con-teclas)
 * [Ejercicio 10. Movimiento proporcional al tiempo transcurrido](#ejercicio-10-movimiento-proporcional-al-tiempo-transcurrido)
 * [Ejercicio 11. Movimiento dirigido](#ejercicio-11-movimiento-dirigido)
 * [Ejercicio 12. LookAt()](#ejercicio-12-lookat)
