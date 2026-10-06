@@ -162,3 +162,19 @@ Gracias a la ayuda del enunciado, la implementación fue bastante simple pues so
 ### Ejecución
 
 ![](GIFS/Ejercicio12.gif)
+
+## Ejercicio 13. Rotación
+
+El fichero con el código se encuentra en [Assets/Scripts/Ejercicio13_Rotacion.cs](Assets/Scripts/Ejercicio13_Rotacion.cs)
+
+### Descripción
+En este último ejercicio, se pide que modifiquemos uno de los ejercicios anteriores para que el movimiento de la esfera siempre se hiciera en el eje Z. Esto quiere decir que, al presionar cualquier tecla del eje horizontal, el objeto debe rotar y moverse hacia delante es simplemente avanzar en el eje Z.
+
+### Implementación
+Tomando como referencia la estructura de programas anteriores se presentan dos posibles operaciones:
+- Si la tecla es A o D, entonces el movimiento es hrizontal y se realiza la operación `Rotate`, rotando sobre el eje Y (`Vector3.up`).
+- Si la tecla es W o S, se aplica un `Translate` como los que ya hemos descrito en apartados anteriores.
+
+### Ejecución
+
+![](GIFs/Ejercicio13.gif)
