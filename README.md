@@ -39,3 +39,10 @@ Es importante mencionar que la velocidad no pasaq instantáneamente de 0 a 1 o -
 
 ### Ejecución
 ![](GIFs/Ejercicio06.gif)
+
+## Ejercicio 07. Mapeo de teclas a accinoes.
+
+### Descripción
+Este ejercicio fue mucho más breve, pues solo era necesario modificar un campo en las opciones dle proyecto para que el mapeo de la acción Disparo (`fire1`) fuera a la tecla `h`. En el ejemplo se muestra el procedimiento seguido.
+
+![](GIFs/Ejercicio07.gif)
