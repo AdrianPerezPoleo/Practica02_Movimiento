@@ -24,3 +24,18 @@ En el enunciado se propusieron dos formas de hacerlo: mediante un único objeto 
 ### Ejecución
 ![](GIFs/Ejercicio05.gif)
 
+## Ejercicio 06. Velocidad
+
+El fichero con el código se encuentra en [Assets/Scripts/Ejercicio06_Velocidad.cs](Assets/Scripts/Ejercicio06_Velocidad.cs)
+
+### Descripción
+Este ejercicio solicitaba qye el programa mostrara por consola las veces que el usuario presionaba cada una de las flechas, obteniendo el valor del eje correspondiente e imprimiendo tanto la tecla como la velocidad.
+
+Es importante mencionar que la velocidad no pasaq instantáneamente de 0 a 1 o -1, sino que gradualmente avanza y al segundo ya adquiere su máximo valor. Esto fue algo que desconocía y que aprendí realizando el ejercicio.
+
+### Implementación
+- Conocer `Input.GetKey()` para verificar si el usuario se encuentra presionando una tecla concreta así como `KeyCode` que es el tipo que hay que pasar como parámetro fue esencial para poder realizar este ejercicio.
+- Más allá de eso, se imprimen por consola mensajes, algo que ya se hizo en la práctica pasada.
+
+### Ejecución
+![](GIFs/Ejercicio06.gif)
