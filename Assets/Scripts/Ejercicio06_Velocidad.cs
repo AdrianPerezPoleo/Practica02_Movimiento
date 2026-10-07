@@ -1,15 +1,8 @@
 using UnityEngine;
-using UnityEngine.UIElements;
 
 public class Ejercicio06_Velocidad : MonoBehaviour
 {
     public int velocity;
-
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
-    void Start()
-    {
-        
-    }
 
     // Update is called once per frame
     void Update()
