@@ -4,7 +4,7 @@
 * [Introducción](#introducción)
 * [Ejercicio 05. Desplazamiento](#ejercicio-05-desplazamiento)
 * [Ejercicio 06. Velocidad](#ejercicio-06-velocidad)
-* [Ejercicio 07. Mapea de teclas a acciones](#ejercicio-07-mapeo-de-teclas-a-accinoes)
+* [Ejercicio 07. Mapea de teclas a acciones](#ejercicio-07-mapeo-de-teclas-a-acciones)
 * [Ejercicio 08. Análisis de Movimiento](#ejercicio-08-análisis-de-movimiento)
 * [Ejercicio 09. Movimiento con teclas](#ejercicio-09-movimiento-con-teclas)
 * [Ejercicio 10. Movimiento proporcional al tiempo transcurrido](#ejercicio-10-movimiento-proporcional-al-tiempo-transcurrido)
@@ -48,10 +48,10 @@ Es importante mencionar que la velocidad no pasa instantáneamente de 0 a 1 o -1
 ### Ejecución
 ![](GIFs/Ejercicio06.gif)
 
-## Ejercicio 07. Mapeo de teclas a accinoes.
+## Ejercicio 07. Mapeo de teclas a acciones.
 
 ### Descripción
-Este ejercicio fue mucho más breve, pues solo era necesario modificar un campo en las opciones dle proyecto para que el mapeo de la acción Disparo (`fire1`) fuera a la tecla `h`. En el ejemplo se muestra el procedimiento seguido.
+Este ejercicio fue mucho más breve, pues solo era necesario modificar un campo en las opciones del proyecto para que el mapeo de la acción Disparo (`fire1`) fuera a la tecla `h`. En el ejemplo se muestra el procedimiento seguido.
 
 ![](GIFs/Ejercicio07.gif)
 
