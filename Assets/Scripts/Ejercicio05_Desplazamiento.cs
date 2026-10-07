@@ -2,24 +2,16 @@ using UnityEngine;
 
 public class Ejercicio05_Desplazamiento : MonoBehaviour
 {
-    public Vector3 firstObjectMovement;
-    public Vector3 secondObjectMovement;
-    public Vector3 thirdObjectMovement;
+    public Vector3 objectMovement;
 
-    public Transform firstObject;
-    public Transform secondObject;
-    public Transform thirdObject;
+    public Transform objectTransform;
 
-    private Vector3 firstObjectInitialPosition;
-    private Vector3 secondObjectInitialPosition;
-    private Vector3 thirdObjectInitialPosition;
+    private Vector3 initialPosition;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-        firstObjectInitialPosition = firstObject.position;
-        secondObjectInitialPosition = secondObject.position;
-        thirdObjectInitialPosition = thirdObject.position;
+        initialPosition = objectTransform.position;
     }
 
     // Update is called once per frame
@@ -27,9 +19,7 @@ public class Ejercicio05_Desplazamiento : MonoBehaviour
     {
         if (Input.GetAxis("Jump") == 1)
         {
-            firstObject.position = firstObjectInitialPosition + firstObjectMovement;
-            secondObject.position = secondObjectInitialPosition + secondObjectMovement;
-            thirdObject.position = thirdObjectInitialPosition + thirdObjectMovement;      
+            objectTransform.position = initialPosition + objectMovement;   
         }
 
     }
