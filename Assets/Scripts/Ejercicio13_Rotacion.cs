@@ -12,7 +12,7 @@ public class Ejercicio13_Rotacion : MonoBehaviour
         float horizontalAxis = Input.GetAxis("Horizontal");
         float verticalAxis = Input.GetAxis("Vertical");
         transform.Rotate(rotationSpeed * transform.up * horizontalAxis * Time.deltaTime);
-        transform.Translate(speed * transform.forward * verticalAxis * Time.deltaTime, Space.World);
+        transform.Translate(speed * Vector3.forward * verticalAxis * Time.deltaTime);
         Debug.DrawRay(transform.position, transform.forward * 2, Color.red);
     }
 }
