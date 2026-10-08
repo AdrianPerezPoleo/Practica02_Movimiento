@@ -157,7 +157,7 @@ Gracias a la ayuda del enunciado, la implementación fue bastante simple pues so
 
 ### Ejecución
 
-![](GIFS/Ejercicio12.gif)
+![](GIFs/Ejercicio12.gif)
 
 ## Ejercicio 13. Rotación
 
