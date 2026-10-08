@@ -64,45 +64,30 @@ En este ejercicio se propuso mover un cubo a partir de una dirección y una velo
 
 ### Implementación
 Antes de pasar a comentar los resultados de cada una de las situaciones, voy a explicar cómo se implementó el movimiento.
-- Para ello simplemente fue necesario configurar como públicos los atributos de dirección de movimiento y velocidad y posteriormente aplicar la operación `Translate` al transform del cubo. 
-- Quiero destacar dos decisiones que tomé en la implementación y por qué:
-    - Uso de **normalized**: Como vimos en clase, el vector de dirección debe estar normalizado para quedarnos con las componentes importantes y eliminar el aumento de valor que añade.
-    - Uso de **Time.DeltaTime**: Se usa este último valor debido a que si no, no se ubiera podido ver nada en las pruebas de ejcucón, pues los frames avanzan tan rápido que no era posible mostrarlo de forma cómoda.
+- Para ello simplemente fue necesario configurar como públicos los atributos de dirección de movimiento y velocidad y posteriormente aplicar la operación `Translate` al transform del cubo.
 
 ### Ejecución
 ![](GIFs/Ejercicio08.gif)
 
 ### Resultados obtenidos
 #### a. Duplicar las coordenadas de la dirección del movimiento
-Como ya mencioné al utilizar el vector normalizado, la duplicación de las coordenadas no afecta en nada. Ese es precisamente el objetivo de utilizar el vector normalizado, que el tamaño de sus coordenadas no afecte a la velocidad de movimiento (para eso esta el atributo `velocidad`).
-
-![](GIFs/Ejercicio08a.gif)
+Cuando duplicamos las coordenadas, tal como se ve en el ejemplo, el cubo comienza a ir más rápido. Esto se debe a que no lo estamos normalizando. Por lo tanto el valor que contenga cada una de las coordenadas del vector de dirección influirá en la velocidad de movimiento. Para evitar este hecho, como haremos más adelante, se usa `.normalized`, delegando la velocidad en el atributo `speed`.
 
 #### b. Duplicar la velocidad manteniendo la dirección
-Al contrario que en el caso anterior, ahora sí se duplica la velocidad de movimento del cubo, pues la velocidad es la que debe terminar qué tan rápido se mueve (y no la dirección).
-
-![](GIFs/Ejercicio08b.gif)
+Al igual que en el caso anterior, se acelera el movimiento del cubo. En este caso es lo esperado, pues estamos dándole más velocidad.
 
 #### c. Reducir la velocidad por debajo de 1
 Para este caso, probamos dos alternativas: 
 - Si la velocidad es un valor entre 0 y 1, lo único que ocurre es que el movimiento se ralentiza bastante.
-- Si la velocidad es negativa, entonces va hacia atrás el objeto.
-
-![](GIFs/Ejercicio08c.gif)
+- Si la velocidad es negativa, entonces va hacia atrás.
 
 #### d. La altura del cubo es superior a 0
-En este caso el cubo flota, pues no hemos añadido físicas al mismo. El movimiento puede realizarse también en el eje y, simulando que el cubo está flotando.
-
-![](GIFs/Ejercicio08d.gif)
+Gracias a las comprobaciones realizadas en el método `Start()`, el cubo comienza inicialmente en la coordenada 0 del eje Y. Posteriormente, en función del vector de dirección, se podrá desplazar a lo largo de los 3 ejes, pero en un primer momento nos aseguramos de que empiece en 0.
 
 #### e. Intercambiar el movimiento relativo al sistema de referencia local y el mundial
-- El sistema de referencia local tiene en cuenta si el cubo está rotando en el eje en el que se va a mover.
-
-![](GIFs/Ejercicio08eaa.gif)
+- Utilizando el sistema de referencia local, si el cubo está rotado entonces el movimiento se realizará en el eje determinado por dicha rotación y no siguiendo los ejes del mundo.
 
 - Sin embargo, el sistema de referencia global tiene solo en cuenta los ejes del mundo y por tanto no tiene en cuenta si los ejes del objeto han sido desplazados o rotados.
-
-![](GIFs/Ejercicio08ebb.gif)
 
 ## Ejercicio 09. Movimiento con Teclas
 
