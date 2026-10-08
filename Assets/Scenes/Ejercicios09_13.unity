@@ -131,7 +131,6 @@ GameObject:
   - component: {fileID: 1230228567}
   - component: {fileID: 1230228566}
   - component: {fileID: 1230228565}
-  - component: {fileID: 1230228563}
   - component: {fileID: 1230228562}
   - component: {fileID: 1230228561}
   - component: {fileID: 1230228560}
@@ -163,7 +162,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1230228558}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: f7a324ed746102b4a82eaf4673ad107f, type: 3}
   m_Name: 
@@ -189,26 +188,12 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1230228558}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: b7c690dc515d52049894a1d227126076, type: 3}
   m_Name: 
   m_EditorClassIdentifier: '::'
   speed: 0.05
---- !u!114 &1230228563
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1230228558}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 92adbb7e66321cf4392a39c80a55d604, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::Ejercicio08_Movimiento
-  moveDirection: {x: 1, y: 0, z: 0}
-  speed: 1.5
 --- !u!65 &1230228565
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -388,13 +373,13 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1250526420}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 1, z: -16.07}
+  m_LocalRotation: {x: 0.04190471, y: -0, z: -0, w: 0.99912167}
+  m_LocalPosition: {x: 0, y: 2.1, z: -14.9}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 4.803, y: 0, z: 0}
 --- !u!114 &1250526424
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -482,7 +467,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1593809529}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 98b384b1df6eda14281ef7f9a6c4550d, type: 3}
   m_Name: 
@@ -495,7 +480,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1593809529}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: a18c52bc89d56944a91aa6d59fc89836, type: 3}
   m_Name: 

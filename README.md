@@ -153,7 +153,7 @@ En este ejercicio se propone que el cubo se mueva hacia la posición en la que s
 
 ### Implementación
 - Para obtener el vector de dirección se restaron las distancias entre las posiciones (`transform.position`) de los objetos.
-- Para ubicar a la esfera fue necesario utilizar un tag, pues si bien podría haber crear un atribuot público `GameComponent`, preferí utilizar el tag como hicimos en la práctica pasada.
+- Para ubicar a la esfera, si bien podría haber creado un atributo público `GameComponent`, preferí utilizar el tag como hicimos en la práctica pasada.
 - Finalmente se normaliza el vector de distancia y se multiplica por la velocidad y el delta del tiempo.
 
 ### Ejecución
