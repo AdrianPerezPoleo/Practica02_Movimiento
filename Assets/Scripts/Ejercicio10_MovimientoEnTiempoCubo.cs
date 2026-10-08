@@ -13,13 +13,10 @@ public class Ejercicio10_MovimientoEnTiempoCubo : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetKey(KeyCode.UpArrow) || Input.GetKey(KeyCode.DownArrow))
-        {
-            transform.Translate(speed * Input.GetAxis("Vertical") * Vector3.forward * Time.deltaTime);
-        }
-        if (Input.GetKey(KeyCode.LeftArrow) || Input.GetKey(KeyCode.RightArrow))
-        {
-            transform.Translate(speed * Input.GetAxis("Horizontal") * Vector3.right * Time.deltaTime);
-        }
+        float verticalAxis = Input.GetAxis("FlechasVertical");
+        float horizontalAxis = Input.GetAxis("FlechasHorizontal");
+
+        transform.Translate(speed * verticalAxis * Vector3.forward * Time.deltaTime);
+        transform.Translate(speed * horizontalAxis * Vector3.right * Time.deltaTime);
     }
 }

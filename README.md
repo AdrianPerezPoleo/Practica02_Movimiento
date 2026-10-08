@@ -118,6 +118,7 @@ Los movimientos se deben hacer en los ejes X y Z y una vez más contamos con el 
 
 ### Implementación
 - La implementación se realizó utilizando el material de ejercicios anteriores (usando un Translate con la multiplicación de la velocidad por el eje y por el vector unitario del mismo).
+- Es importante mencionar que fue necesario crear varios ejes auxiliares en el InputManager llamados *FlechasVertical*, *FlechasHorizontal*, *ADHorizontal* y *WSVertical*. Gracias a estos ejes desacoplamos el procesamiento de las teclas y no se generan conflictos en los ejes (con *Horizontal* y *Vertical* sí hubieran ocurrido).
 - Los vectores unitarios de los ejes utilizados fueron `Vector3.right` y `Vector3.forward`.
 
 ### Ejecución
@@ -135,6 +136,8 @@ Este ejercicio es muy similar al anterior pero se pretende resolver el problema 
 ### Implementación
 
 Para resolver el problema, añadimos a la multiplicación de dentro del `Translate` el factor `Time.deltaTime`, como ya hicimos en algún apartado anterior para mejorar la visualización de los ejemplos.
+
+Si bien en los vídeos de este ejercicio y el anterior parece que van a velocidades similares, es importante ver que la velocidad en este caso es superior a 1 y en el anterior se acercaba bastante a 0.
 
 ### Ejecución
 
