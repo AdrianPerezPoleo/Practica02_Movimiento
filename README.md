@@ -64,7 +64,7 @@ En este ejercicio se propuso mover un cubo a partir de una dirección y una velo
 
 ### Implementación
 Antes de pasar a comentar los resultados de cada una de las situaciones, voy a explicar cómo se implementó el movimiento.
-- Para ello simplemente fue necesario configurar como públicos los atributos de dirección de movimiento y velocidad y posteriormente aplicar la operación `Translate` al transform del cubo.
+- Para ello, simplemente fue necesario configurar como públicos los atributos de dirección de movimiento y velocidad y posteriormente aplicar la operación `Translate` al transform del cubo.
 
 ### Ejecución
 ![](GIFs/Ejercicio08.gif)
@@ -99,7 +99,7 @@ Este ejercicio tiene dos ficheros de código (muy similares) que se encuentran e
 
 Este es el primer ejercicio en el que se asocian las teclas con el movimiento de los objetos. El cubo se debe poder mover con las flechas mientras que la esfera debe poder hacerlo con las teclas A, S W y D.
 
-Los movimientos se deben hacer en los ejes X y Z y una vez más contamos con el atributo `velocidad`.
+Los movimientos se deben hacer en los ejes X y Z y una vez más contamos con el atributo `Speed`.
 
 ### Implementación
 - La implementación se realizó utilizando el material de ejercicios anteriores (usando un Translate con la multiplicación de la velocidad por el eje y por el vector unitario del mismo).
